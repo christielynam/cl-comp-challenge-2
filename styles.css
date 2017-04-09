@@ -1,0 +1,284 @@
+html {
+  height:100%;
+}
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: #2B2B2B;
+}
+.logo-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.admin-user {
+  padding: 20px;
+}
+#admin-icon {
+  width: 20px;
+  height: 20px;
+  display: inline;
+}
+.username {
+  display: inline;
+  color: #37BAFE;
+  font-size: 16px;
+}
+#selector-arrow {
+  width: 15px;
+  height: 15px;
+  display: inline;
+}
+h1 {
+  padding-right: 25px;
+  color: #FFFFFF;
+  font-family: 'Bitter', serif;
+  font-size: 40px;
+}
+.ribbon-icon {
+  width: 30px;
+  height: 30px;
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0;
+}
+li {
+  padding: 10px;
+  list-style: none;
+}
+li a {
+  color: #6B6B6B;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+li a:hover {
+  color: #FFFFFF;
+}
+.wrapper {
+  width: 100%;
+  height: 100 vh;
+  background-color: #EEEEEE;
+}
+h2 {
+  margin: 0;
+  padding: 30px 25px;
+  color: #4D4D4D;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+}
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;;
+}
+article {
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid #CECECE;
+  box-shadow: 0 10px 10px #CECECE;
+  background-color: #FFFFFF;
+}
+.img-container {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: url(assets/profile.jpg) no-repeat;
+  background-size: cover;
+}
+.arrow-icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+}
+.views-container {
+  margin:15px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.views {
+  margin: 0;
+  color: #4E4E4E;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.view-number {
+  margin: 0;
+  color: #4E4E4E;
+  font-size: 24px;
+  font-weight: 400;;
+}
+.top-box {
+  width: 260px;
+  height: 75px;
+  align-items: center;
+}
+.name {
+  margin: 0;
+  padding-top: 20px;
+  color: #828282;
+  font-size: 20px;
+  font-weight: 400;
+  word-wrap: break-word;
+  overflow: scroll;
+}
+.date {
+  color: #C3C5C7;
+  font-size: 12px;
+}
+.link-box {
+  width: 260px;
+  height: 50px;
+  background-color: #EFEFEF;
+}
+.link {
+  margin: 0;
+  padding: 5px;
+  word-wrap: break-word;
+  overflow: scroll;
+}
+.link a {
+  color: #8F8F8F;
+  font-size: 12px;
+  text-decoration: none;
+}
+.middle-box {
+  width: 260px;
+  height: 75px;
+}
+.middle-text {
+  margin: 0;
+  padding-top: 25px;
+  color: #828282;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.playlist-name {
+  margin: 0;
+  padding-top: 10px;
+  color: #828282;
+  font-size: 16px;
+  word-wrap: break-word;
+  overflow: scroll;
+}
+.bottom-box {
+width: 260px;
+height: 75px;
+}
+.bottom-text {
+  margin: 0;
+  padding-top: 25px;
+  color: #828282;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.attachment-number {
+  margin: 0;
+  padding-top: 10px;
+  color: #37BAFE;
+  font-size: 30px;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 785px) {
+
+  header {
+  display: flex;
+  flex-direction: row;
+  }
+  .logo-header {
+    align-items: flex-start;
+  }
+  h1 {
+    padding-left: 25px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  nav {
+    padding: 0 5px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .admin-user {
+    padding-left: 5px;
+  }
+  .username {
+    font-size: 14px;
+  }
+  li a {
+    font-size: 14px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  h1 {
+    margin: 0;
+    padding: 25px 0 25px 10px;
+    font-size: 40px;
+  }
+  .admin-user {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+  .icon,
+  #admin-icon {
+    display: none;
+    padding: 0;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    padding-left: 0;
+  }
+}
